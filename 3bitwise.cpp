@@ -1,0 +1,2 @@
+// left shift operator means that 5<<1 mein agar 5 ka bit number 0001001 hai then every bit moves left 1 side
+                                       //so abh 5 ka bit number 0010010 ho jayega and then number change hojayega to the respective number
