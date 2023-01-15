@@ -1,7 +1,7 @@
 x=input()
 b=x.replace('a',"")
 c=b.replace('e',"")
-d=c.replace('i',"")
+d=c.replace('i' or 'I',"")
 e=d.replace('o',"")
 f=e.replace('u',"")
 print(f)

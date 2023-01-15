@@ -52,6 +52,7 @@ for i in a:
     else:
         complextype+=1
 
+print(palindrome,prime)
 if(palindrome==1 and prime==1):
     print(a[(len(a)-1)//2])
 elif(prime==1):
@@ -79,8 +80,8 @@ elif(palindrome==1):
             b.append(d)
     print(b) 
 else:
+    l2=[]
     for i in a:
-        l2=[]
         if (type(i)==str):
             for j in list(i):
                 l2.append(j)

@@ -53,7 +53,7 @@ vector <int> spiralorder(vector<vector<int>> &matrix){
 int main(){
     vector<vector<int>> matrix;
     for(int row=0;row<3;row++){
-        for(int col=0;col<3;col++){
+        for(int col=0;col<5;col++){
             int cal;
             cin>>cal;
             matrix[row].push_back(cal);
