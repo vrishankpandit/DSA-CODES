@@ -1,6 +1,6 @@
 
 x=input()
-y=input()
+y=x
 agct="AGCT"
 if(set(agct)==(set(x))  and set(agct)==(set(y)) ):
     l1=[i for i in range(len(x)) if x.startswith("AGCT",i)]
