@@ -16,11 +16,13 @@ int fib(int n){
 
     return ans;
 }
+//
 
 int main(){
     int n;
     cin>>n;
     //where n is the (n+1)th term of a fibbonacci series
     cout<<fib(n);
+    cout<<endl;
     return 0;
 }
