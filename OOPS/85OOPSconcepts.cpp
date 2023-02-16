@@ -65,21 +65,32 @@ void setlevel(char ch){
     level=ch;
 }
 
+    ~hero(){
+        cout<<"destructor called "	<<endl;
+    }
+
 };
 
 int main(){
 
+    // statically destructor call
     hero hero1;
-    hero1.sethealth(70);
-    hero1.setlevel(70);
-    char name[7]="suiiii";
-    hero1.setname(name);
-    hero hero2(hero1);
-    hero1.print();
 
-    hero1.name[2]='o';
+    // deleting h afterwards as we have to call the destructor for dynamically allocated memory
+    hero *h=new hero;
+    delete h;
 
-    hero2.print();
+    // hero hero1;
+    // hero1.sethealth(70);
+    // hero1.setlevel(70);
+    // char name[7]="suiiii";
+    // hero1.setname(name);
+    // hero hero2(hero1);
+    // hero1.print();
+
+    // hero1.name[2]='o';
+
+    // hero2.print();
 
 
     //dynamic allocation
