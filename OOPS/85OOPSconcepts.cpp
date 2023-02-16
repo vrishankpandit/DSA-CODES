@@ -11,7 +11,7 @@ int health;
 public:
 char *name;
 char level;
-
+static int timetocomplete;
 //
 hero(){
     cout<<"constructor called"<<endl;
@@ -65,17 +65,28 @@ void setlevel(char ch){
     level=ch;
 }
 
+static int random(){
+    return timetocomplete;
+}
+
     ~hero(){
         cout<<"destructor called "	<<endl;
     }
 
+
 };
+
+int hero::timetocomplete = 5;
 
 int main(){
 
     // statically destructor call
     hero hero1;
 
+    cout<<hero::timetocomplete	<<endl;
+    cout<<hero1.timetocomplete	<<endl;  //not recommended 
+
+    cout<<"static function used"<<hero::random()<<endl;
     // deleting h afterwards as we have to call the destructor for dynamically allocated memory
     hero *h=new hero;
     delete h;
