@@ -86,7 +86,7 @@ int main(){
     cout<<hero::timetocomplete	<<endl;
     cout<<hero1.timetocomplete	<<endl;  //not recommended 
 
-    cout<<"static function used"<<hero::random()<<endl;
+    cout<<"static function used "<<hero::random()<<endl;
     // deleting h afterwards as we have to call the destructor for dynamically allocated memory
     hero *h=new hero;
     delete h;
