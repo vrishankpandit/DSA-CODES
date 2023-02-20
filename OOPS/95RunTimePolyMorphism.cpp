@@ -22,7 +22,7 @@ class dog:public animal{
 int main(){
     
     dog obj;
-    obj.speak();
+    obj.speak();  //print the speak of child class 
 
     return 0;
 }
