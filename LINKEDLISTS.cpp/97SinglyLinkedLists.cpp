@@ -26,6 +26,35 @@ void insertattail(node* &tail,int d){
 
 
 }
+
+void insertatpos(node* &tail,node* &head,int position,int d){
+    node* temp=head;
+    int cnt=1;
+    //insert at start
+    if(position==1){
+        insertathead(head,d);
+        return;
+    }
+
+    while(cnt<position-1){
+        temp=temp->next;
+        cnt++;
+
+    }
+
+    if(temp->next==NULL){
+        insertattail(tail,d);
+        return;
+    }
+
+    node* nodetoinsert=new node(d);
+    nodetoinsert->next=temp->next;
+    temp->next=nodetoinsert;
+
+
+
+
+}
 //traversing through a linkedlist
 
 void print(node* &head){
@@ -57,6 +86,16 @@ int main(){
     print(head);
     insertattail(tail,15);
     print(head);
+
+    insertatpos(tail,head,3,22);
+    print(head);
+    insertatpos(tail,head,1,32);
+    print(head);
+    insertatpos(tail,head,6,60);
+    print(head);
+
+    cout<<"head is"<<head->data	<<endl;
+    cout<<"tail is"<<tail->data	<<endl;
 
     return 0;
 }
