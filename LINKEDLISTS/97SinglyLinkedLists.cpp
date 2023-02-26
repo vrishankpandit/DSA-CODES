@@ -94,8 +94,8 @@ int main(){
     insertatpos(tail,head,6,60);
     print(head);
 
-    cout<<"head is"<<head->data	<<endl;
-    cout<<"tail is"<<tail->data	<<endl;
+    cout<<"head is "<<head->data	<<endl;
+    cout<<"tail is "<<tail->data	<<endl;
 
     return 0;
 }
