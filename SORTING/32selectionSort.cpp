@@ -1,5 +1,14 @@
 #include<iostream>
 using namespace std;
+
+void print(int *arr,int n){
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]	<<" ";
+    }
+    
+}
+
 void selectionsort(int arr[],int size){
     for (int i = 0; i < size-1; i++)
     {
@@ -11,18 +20,16 @@ void selectionsort(int arr[],int size){
             }
         }
         swap(arr[minindex],arr[i]);
+        print(arr,5);
+        cout<<endl;
     }
     
 
 }
 int main(){
 
-    int arr[5]={6,2,4,8,10};
+    int arr[5]={10,1,11,8,6};
     selectionsort(arr,5);
-    for (int i = 0; i < 5; i++)
-    {
-        cout<<arr[i]	<<endl;
-    }
     
     
     return 0;
