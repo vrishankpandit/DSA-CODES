@@ -66,8 +66,6 @@ int main(){
     cout<<st.peek()<<endl;
     st.pop();
     cout<<st.peek()<<endl;
-    st.pop();
-    cout<<st.peek()<<endl;
     
 
     return 0;
