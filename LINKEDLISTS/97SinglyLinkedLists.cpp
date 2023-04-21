@@ -33,8 +33,6 @@ void insertattail(node* &tail,int d){
     node* temp=new node(d);
     tail->next=temp;
     tail=temp;
-
-
 }
 
 void insertatpos(node* &tail,node* &head,int position,int d){
@@ -49,7 +47,6 @@ void insertatpos(node* &tail,node* &head,int position,int d){
     while(cnt<position-1){
         temp=temp->next;
         cnt++;
-
     }
 
     if(temp->next==NULL){
