@@ -25,9 +25,9 @@ int main(){
     int even[6]={3,5,7,9,10,11};
     int odd[7]={4,7,9,10,14,15,17};
     int key;
-    // cout<<"enter the key"	<<endl;
-    // cin>>key;
-    int evenindex=binarysearch(even,6,10);
+    cout<<"enter the key"	<<endl;
+    cin>>key;
+    int evenindex=binarysearch(even,6,key);
     cout<<evenindex	<<endl;
     return 0;
 }

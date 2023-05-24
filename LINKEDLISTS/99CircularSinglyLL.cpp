@@ -24,6 +24,7 @@ class node{
 
 void insertnode(node* &tail,int element,int d){
 
+    cout<<"inserting "<<d<<endl;
     if(tail==NULL){
         node* temp=new node(d);
         temp->next=temp;
@@ -61,6 +62,7 @@ void print(node* &tail){
 }
 
 void deletenode(node* &tail,int value){
+    cout<<"deleting "<<value	<<endl;
 
     if(tail==NULL){
         cout<<"list is empty"	<<endl;

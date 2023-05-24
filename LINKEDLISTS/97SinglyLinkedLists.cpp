@@ -24,6 +24,7 @@ class node{
 
 
 void insertathead(node* &head,int d){
+    cout<<"inserting "<<d<<" at head "<<endl;
     node* temp=new node(d);
     temp->next=head;   //next here stores the next node address //and head is the first node 
     head=temp;
@@ -31,6 +32,7 @@ void insertathead(node* &head,int d){
 
 void insertattail(node* &tail,int d){
     node* temp=new node(d);
+    cout<<"inserting at end "<<d<<endl;
     tail->next=temp;
     tail=temp;
 }
@@ -56,6 +58,7 @@ void insertatpos(node* &tail,node* &head,int position,int d){
 
     node* nodetoinsert=new node(d);
     nodetoinsert->next=temp->next;
+    cout<<"inserting " <<d << " affter "<<temp->data<<endl;
     temp->next=nodetoinsert;
 
 
@@ -87,6 +90,7 @@ void deletenode(int position ,node* &head){
             prev=curr;
             curr=curr->next;
         }
+        cout<<"deleting "<<curr->data	<<endl;
         prev->next=curr->next;
         curr->next=NULL;
          //memory free
